@@ -5,7 +5,6 @@ import Head from "next/head";
 import Router from "next/router";
 import PageChange from "/components/PageChange/PageChange.js";
 import {MoralisProvider} from "react-moralis";
-import {SessionProvider} from "next-auth/react";
 import "/styles/scss/nextjs-material-kit.scss?v=1.2.0";
 
 Router.events.on("routeChangeStart", (url) => {
@@ -51,14 +50,12 @@ export default class MyApp extends App {
           />
           <title>Shevaverse</title>
         </Head>
-        <SessionProvider session={pageProps.session} refetchInterval={0}>
         <MoralisProvider
         serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}
         appId={process.env.NEXT_PUBLIC_APP_ID}
         >
         <Component {...pageProps} />
         </MoralisProvider>
-        </SessionProvider>
       </React.Fragment>
     );
   }
