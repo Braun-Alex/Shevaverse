@@ -26,7 +26,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
         <ListItem className={classes.listItem}>
             <Button
-                onClick={async () => {await Router.push("/polls")}}
+                onClick={() => {Router.push("/polls")}}
                 color="transparent"
                 disabled={!isAuthenticated}
                 target="_blank"
@@ -37,7 +37,7 @@ export default function HeaderLinks(props) {
         </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          onClick={async () => {await Router.push("/about");}}
+          onClick={() => {Router.push("/about");}}
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -47,7 +47,7 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          onClick={async () => {await Router.push("/contacts");}}
+          onClick={() => {Router.push("/contacts");}}
           color="transparent"
           target="_blank"
           className={classes.navLink}
