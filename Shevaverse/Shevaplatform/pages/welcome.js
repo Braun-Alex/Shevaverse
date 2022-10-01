@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import Header from "/components/Header/Header.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
@@ -33,7 +33,7 @@ export default function Welcome(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Welcome to the Shevaverse!</h1>
                 <h3 className={classes.subtitle}>
-                  Have experience with ERC-20 token called SHEVA!
+                   Permissionless Proof-of-Stake e-voting system based on Shevacoins
                 </h3>
               </div>
             </GridItem>

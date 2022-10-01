@@ -15,7 +15,7 @@ class MyDocument extends Document {
             sizes="72x72"
             href="/img/shevaverse_apple_icon.png"
           />
-          {/* Fonts and icons */}
+          {}
           <link
             rel="stylesheet"
             type="text/css"
